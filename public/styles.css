@@ -52,9 +52,11 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 70%;
+    position: relative;
 }
 .name{
-    width: 950px;
+    width: 100%;
     text-align: center;
     position: relative;
     display: flex;
@@ -77,6 +79,7 @@ p{
     border-top: 1px solid #A5B3CE;
     margin-top: 30px;
     width: 90%;
+    position: relative;
     
     
 }
@@ -123,3 +126,31 @@ p{
     margin: 40px;
 }
 /*end works*/
+
+/*Brack points*/
+
+@media (max-width:576px ) {
+    .main{
+        width: 90%;
+    }
+    .container-main{
+        width: 100%;  
+    }
+    .info{
+        width: 100%;       
+    }
+    .name .info ul{
+        flex-wrap: wrap;
+    }
+    .name .info li{
+        margin: 15px 30px;
+    
+    }
+    
+}
+@media (max-width:992px ) {
+    .info{
+        width: 100%;       
+    }
+}
+/**/
